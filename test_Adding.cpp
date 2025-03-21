@@ -1,6 +1,7 @@
 
 #include <gtest/gtest.h>
 #include "Adding.cpp"
+#include "Point3D.cpp"
 
 
 TEST(AdditionTest, StackAddition_Poaitive){
@@ -22,3 +23,6 @@ TEST(AdditionTest, MixedAddition_Poaitive){
   
   EXPECT_EQ(add_Mixed(3,b),7);
 }
+
+
+

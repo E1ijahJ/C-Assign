@@ -2,6 +2,7 @@
 #include <gtest/gtest.h>
 #include "Adding.cpp"
 #include "Point3D.cpp"
+#include "Utils.cpp"
 
 
 TEST(AdditionTest, StackAddition_Poaitive){
@@ -32,5 +33,12 @@ TEST(PointTest, AdditionOperator) {
     EXPECT_DOUBLE_EQ(result.y, 8.0);
     EXPECT_DOUBLE_EQ(result.z, 10.0);
 }
+TEST(UtilsTest, SwapValues) {
+    auto [a, b] = swap_values(3, 7);
+    EXPECT_EQ(a, 7);
+    EXPECT_EQ(b, 3);
+}
 
-
+TEST(UtilsTest, MaxValue) {
+    EXPECT_EQ(max_value(10, 20), 20);
+}

@@ -1,3 +1,4 @@
+/// @brief this is a class object that takes 3 doubles in x y and z and then adds the other x y and z together and reutrns the sum of the xs the ys and the zs
 class Point3D{
   public:
   double x,y,z;
